@@ -1,0 +1,141 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+/* Navigation */
+.navbar {
+  background-color: #2c3e50;
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.space ul {
+  padding: 10px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #3498db;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 6rem auto 2rem;
+  padding: 0 20px;
+}
+
+/* Banner */
+.banner {
+  text-align: center;
+  padding: 3rem 0;
+  background: linear-gradient(135deg, #2c3e50, #3498db);
+  color: white;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+}
+
+.banner h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Cards */
+.card-white {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-white:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card-white h2 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 0.5rem;
+}
+
+.card-white h3 {
+  color: #3498db;
+  margin: 1rem 0;
+}
+
+/* Lists */
+.card-white ul {
+  list-style-position: inside;
+  margin: 1rem 0;
+  padding-left: 1rem;
+}
+
+.card-white li {
+  margin-bottom: 0.5rem;
+}
+
+/* Links */
+.card-white a {
+  color: #3498db;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.card-white a:hover {
+  color: #2c3e50;
+}
+
+/* Profile image */
+.profile-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 2rem;
+  display: block;
+  border: 4px solid white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .navbar ul {
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .banner h1 {
+    font-size: 2rem;
+  }
+}
